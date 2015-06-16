@@ -25,3 +25,4 @@ while True:
     print 'Case %d:'%(case); case += 1
     for s in mat:
         print ''.join(map(str,[str(st).rjust(3) for st in s]))
+
