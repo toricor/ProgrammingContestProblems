@@ -1,7 +1,7 @@
 def reverse_polish(operator):
     stack = []
     for i in range(len(operator)):
-        if operator[i].isdigit():
+        if operator[i].isdigit(): # operand
             stack.append(float(operator[i]))
         elif operator[i] == '+':
             tmp = stack.pop()+stack.pop()
