@@ -8,7 +8,6 @@ class Node:
         self.depth = -1
         self.parent = -1
         self.type = 'root'
-        self.end = False
         self.children = []
         
 def find_root_id(nodes):
