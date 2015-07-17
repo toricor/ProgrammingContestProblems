@@ -21,6 +21,9 @@ public class Main {
         long ret = 1;
         for (int i=0; i<bit.length(); i++){
             ret *= ret;
+            /*
+            in function modPow, variable "ret" will overflow if you set 10**8~.
+            */
             if (Integer.parseInt(""+bit.charAt(i))==1){
                 ret *= a;
             }
