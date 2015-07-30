@@ -2,22 +2,22 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
-import java.util.ArrayList;
 
 public class Main {
     static Map<Integer, int[]> map = new HashMap<Integer, int[]>();
     static Map<Integer, Boolean> visited = new HashMap<Integer, Boolean>();
     static List<Integer> que = new ArrayList<Integer>();
     static List<Integer> tmpQue = new ArrayList<Integer>();
-	static int[] d; 
+    static int[] d; 
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
 		
-		//set map
+	//set map
         for (int i = 0; i < n; i++){
             String[] s = br.readLine().split(" ");
             int u = Integer.parseInt(s[0]);
@@ -35,6 +35,7 @@ public class Main {
         for (int i = 0; i < n + 1; i++){
             d[i] = -1;
         }
+        //bfs
         int v = 1;
         que.add(v);
         visited.put(1, true);
@@ -47,8 +48,8 @@ public class Main {
 			
             //add the next Vertices to the que
             try{
-				if (map.get(v) == null){
-					;
+		if (map.get(v) == null){
+		    ;
                 }else{
                     int[] nextArr = map.get(v);
                     for (int j = 0; j < nextArr.length; j++){
@@ -61,14 +62,14 @@ public class Main {
                         }
                     }
                 }
-				// 
-				if (que.size() == 0){
-					step++;
-					for (int i = 0; i < tmpQue.size(); i++){
-						que.add(tmpQue.get(i));
-					}
-					tmpQue.clear();
-				}
+		// after all next siblings are added...
+		if (que.size() == 0){
+		    step++;
+                    for (int i = 0; i < tmpQue.size(); i++){
+                        que.add(tmpQue.get(i));
+		    }
+		    tmpQue.clear();
+		}
             }catch (NullPointerException e){
                 e.printStackTrace();
             }
