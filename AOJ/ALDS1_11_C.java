@@ -17,7 +17,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
 		
-	//set map
+	//set map(graph)
         for (int i = 0; i < n; i++){
             String[] s = br.readLine().split(" ");
             int u = Integer.parseInt(s[0]);
