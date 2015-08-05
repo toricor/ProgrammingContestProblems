@@ -1,2 +1,2 @@
 # Programming
-AOJ, Codeforces etc.
+Aizu Online Judge(AOJ), Codeforces etc.
