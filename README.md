@@ -1,2 +1,2 @@
 # Programming
-AOJ, Codeforces, AtCoder,
+AOJ, Codeforces etc.
