@@ -6,10 +6,10 @@ def fillxtimes(A, ashiList):
             
 if __name__ == "__main__":
     N, T = map(int, raw_input().split())
-    AList = []
+    #AList = []
     ashiList = [0 for i in xrange(T + 1)]
     for i in xrange(N):
         A = int(raw_input())
-        AList.append(A)
+        #AList.append(A)
         fillxtimes(A, ashiList)
     print max(ashiList)
