@@ -80,9 +80,9 @@ class NodeCostComparator implements Comparator<Node>{
 }
 
 class Node{
-    int cost = -1;
-    ArrayList<Integer> edge_to   = new ArrayList<Integer>();
-    ArrayList<Integer> edge_cost = new ArrayList<Integer>();
+    int cost;
+    ArrayList<Integer> edge_to;
+    ArrayList<Integer> edge_cost;
     
     Node(int cost, ArrayList<Integer> edge_to, ArrayList<Integer> edge_cost){
         this.cost       = cost;
