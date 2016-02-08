@@ -52,7 +52,7 @@ class Player {
                 System.out.println("NE");
                 TX++;
                 TY--;
-            }else{
+            }else{ //(difX < 0 && difY < 0)
                 System.out.println("SE");
                 TX++;
                 TY++;
