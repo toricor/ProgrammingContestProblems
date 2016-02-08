@@ -1,1 +1,1 @@
--https://www.codingame.com/home
+*https://www.codingame.com/home
