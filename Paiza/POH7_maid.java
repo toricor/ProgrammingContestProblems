@@ -13,10 +13,10 @@ public class Main {
     }
     public static String getWhenSleep(int overtime) {
         int requiredSleepTime = overtime / 3;
-        StringBuilder sb = new StringBuilder();
         if (requiredSleepTime == 0){// 残業ﾅｼの場合
             return "01:00";
         }
+        StringBuilder sb = new StringBuilder();
         if (requiredSleepTime <= 60){// 就寝が0:00-1:00の間の場合
             int minute = 60 - requiredSleepTime;
             sb.append("00:");
