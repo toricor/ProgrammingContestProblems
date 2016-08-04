@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 import java.math.*;
-// 87 % Accepted
+
 class Player {
     public static String[] map;
     public static int R, C, A;
