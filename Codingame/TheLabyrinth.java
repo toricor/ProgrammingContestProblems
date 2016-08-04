@@ -113,7 +113,7 @@ class Player {
                 if (nextR == gKR && nextC == gKC && map[nextR].charAt(nextC) != '#'){
                     return mkDirection(nextLabel);
                 }
-                if (map[nextR].charAt(nextC) == '.' && !visited[nextR][nextC]){
+                if ((map[nextR].charAt(nextC) == '.' || map[nextR].charAt(nextC) == 'T') && !visited[nextR][nextC]){
                     que.add(nextCells[i]);
                     visited[nextR][nextC] = true;
                 }
