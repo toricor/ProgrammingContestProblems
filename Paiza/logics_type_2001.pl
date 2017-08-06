@@ -36,6 +36,5 @@ sub solve {
 }
 
 chomp(my $inp = <>);
-my $init = (split(//, $inp))[0];
 my @ans = solve($inp);
 print "@ans\n"
